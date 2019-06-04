@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ 	<meta charset="utf-8">
+    <title>profile</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css"> 
+    <link rel="stylesheet" type="text/css" href="../css/profileStyle.css">
+    <link rel="stylesheet" type="text/css" href="../css/popEdit.css">
+    <link rel="stylesheet" type="text/css" href="../css/viewPop.css">
+</head>
+ <body>
+   <div id="topBar">
+      <ul>
+         <li id="upComing"><a>Up-Comming Events</a></li>
+         <li id="pastEvents"><a>Past Events</a></li>
+         <li id="myEvents"><a>My Events</a></li>
+         <li style="float:right"><a class="login"  href="main.html">Log out</a></li>
+         <li style="float:right"><a class="home"  href="adminProfile.html">Admin</a></li>
+         <li style="float:right"><a class="home"  href="main.html">Home</a></li>
+         <li style="float:right"><a class="make">Make an event</a></li>
+      </ul>
+   </div>
+
+   <div id="mainSection">
+        <div id="eventSection">
+            <div class="event">
+                <div class="infoContainer">
+                    <img src="../pictures/eventPic/w3.jpg" class="eventImg">
+                    <div class="darkSheet"></div>
+                    <div class="eventInfo">
+                        <h1>Bill's Party</h1>
+                        <h3>BAHEN CENTER OF I.T.</h3>
+                        <h3> 3am, Feb 24th, 2019</h3>
+                    </div>
+                </div>
+                <div class="side">
+                    <div class="eventLogo">
+                        <img src="../pictures/webPic/logo.png">
+                        <h1>Event Hub</h1>
+                    </div>
+                </div>
+                <!-- <img class="message" src="msg.png"> -->
+
+                <!-- <div class="notificationIcon">
+                        <span>!</span>
+                </div> -->
+            </div>
+            <div class="event">
+                <div class="infoContainer">
+                    <img src="../pictures/eventPic/w4.jpg" class="eventImg">
+                    <div class="darkSheet"></div>
+                    <div class="eventInfo">
+                    <h1>Bill's Party</h1>
+                    <h3>BAHEN CENTER OF I.T.</h3>
+                    <h3> 3am, Feb 24th, 2019</h3>
+                    </div>
+                </div>
+                <div class="side">
+                    <div class="eventLogo">
+                        <img src="../pictures/webPic/logo.png">
+                        <h1>Event Hub</h1>
+                    </div>
+                </div>
+                <div class="notificationIcon">
+                        <span>!</span>
+                </div>
+            </div>
+            <div class="event">
+                <div class="infoContainer">
+                    <img src="../pictures/eventPic/w4.jpg" class="eventImg">
+                    <div class="darkSheet"></div>
+                    <div class="eventInfo">
+                    <h1>Bill's Party</h1>
+                    <h3>BAHEN CENTER OF I.T.</h3>
+                    <h3> 3am, Feb 24th, 2019</h3>
+                    </div>
+                </div>
+                <div class="side">
+                    <div class="eventLogo">
+                        <img src="../pictures/webPic/logo.png">
+                        <h1>Event Hub</h1>
+                    </div>
+                </div>
+                <div class="notificationIcon">
+                        <span>!</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="profileArea">
+            <img id="settingIcon" src="../pictures/webPic/settings.png">
+            <img class="profilePic" src="../pictures/profilePic/face.jpg">
+            <div id="profileInfo">
+                <h1 class="username">Michael ABCDEFGH</h1>
+                <h4>Description</h4>
+                <p class="description"> Michael Own us bubble tea!!! Bill owns ian bubble tea!!!!!!!!! Ian own himself bubble tea!!! </p>
+                <h4>Birthday</h4>
+                <p class="birthday"> bla bla</p>
+                <h4>Location: </h4>
+                <p class="location"> Bobby Tow fdsa fa faf dsaf asdfdsafasdfsadfasfsdafsdafn</p>
+                <h4>Interests</h4>
+                <p class="interests">
+                    #CS #math   
+                </p>
+            </div>
+        </div>
+    </div>
+   <div id='footer'></div>
+
+   <!-- HIDDEN OBJECTS -->
+   <div id="notBox">
+        <div class="notificationSection">
+            THIS WILL BE THE NOTIFICATION!!!
+            THIS WILL BE THE NOTIFICATION!!!
+            THIS WILL BE THE NOTIFICATION!!!
+            THIS WILL BE THE NOTIFICATION!!!
+            THIS WILL BE THE NOTIFICATION!!!
+            THIS WILL BE THE NOTIFICATION!!!
+            THIS WILL BE THE NOTIFICATION!!!
+            THIS WILL BE THE NOTIFICATION!!!
+            THIS WILL BE THE NOTIFICATION!!!
+            THIS WILL BE THE NOTIFICATION!!!
+            THIS WILL BE THE NOTIFICATION!!!
+            THIS WILL BE THE NOTIFICATION!!!
+            THIS WILL BE THE NOTIFICATION!!!
+            THIS WILL BE THE NOTIFICATION!!!
+            THIS WILL BE THE NOTIFICATION!!!
+            THIS WILL BE THE NOTIFICATION!!!
+            THIS WILL BE THE NOTIFICATION!!!
+            THIS WILL BE THE NOTIFICATION!!!
+            THIS WILL BE THE NOTIFICATION!!!
+            THIS WILL BE THE NOTIFICATION!!!
+            THIS WILL BE THE NOTIFICATION!!!
+            THIS WILL BE THE NOTIFICATION!!!
+            THIS WILL BE THE NOTIFICATION!!!
+            THIS WILL BE THE NOTIFICATION!!!
+            THIS WILL BE THE NOTIFICATION!!!
+            THIS WILL BE THE NOTIFICATION!!!
+            THIS WILL BE THE NOTIFICATION!!!
+        </div>
+    </div>
+    <div id="msgBox">
+        <form class="msgForm">
+            <textarea class="msgContent" placeholder="Enter your message here..."></textarea>
+            <input class="submitMsg" type="submit" value="Submit Message"></input>
+        </form>
+    </div>
+	<div id='makePopUp' >
+	   <div class='postHolder'>
+		  <form id='postInfoForm'>
+			<div id='basicInfo' class='block'>
+				<div class='blockHeader'>Basic Info<hr class='headerLine'></div>
+				<ul class='inputFormList'>
+				   <li>
+					  <label for='categoryInput'>Category:</label>
+					  <select id='categoryInput' class='inputBox'>
+						 <option value="CS">CS</option>
+						 <option value="Math">Math</option>
+						 <option value="Group">Group Study</option>
+						 <option value="Party">Party</option>
+						 <option value="Other">Other</option>
+					  </select>
+				   </li>
+				   <li>
+					  <label for='titleInput'>Title:</label>
+					  <input id='titleInput' class='inputBox' type="text"  maxlength="40">
+				   </li>
+				   <li>
+					  <label for='dateInput'>Date:</label>
+					  <input id='dateInput' class='inputBox' type="datetime-local">
+				   </li>
+				   <li>
+					  <label for='locationInput'>Location:</label>
+					  <input id='locationInput' class='inputBox' type="text">
+				   </li>
+				</ul>
+			 </div>
+			 <div id='desImgInfo' class='block'>
+				   <div class='blockHeader'>Main Info<hr class='headerLine'></div>
+				   <ul class='inputFormList'>
+					  <li>
+						 <label>Upload Pictures: </label>
+						 <ul id='imageList'>
+							<li>
+							   <div class="imgInputButton">
+								<input class='imgInput' type="file" accept="image/*">
+							   </div>
+							</li>
+						 </ul>
+					  </li>
+					  <li>
+						 <label for='descriptionInput'>Description: </label>
+						 <textarea id='descriptionInput' class='inputBox'></textarea>
+					  </li>
+					  <li>
+						 <label>Allow Comment:</label>
+						 <input id='allowComment' type='checkbox'>Comment
+					  </li>
+				   </ul>
+			 </div>
+			 <input id='eventCancel' type="button" value="Cancel">
+            <input id='eventSubmit' type="button" value="Post your Event">
+		  </form>
+	   </div>
+   </div>
+   <script type="text/javascript" src="../js/class.js"></script>
+   <script type="text/javascript" src="../js/eventMod.js"></script>
+   <script type="text/javascript" src="../js/popUp.js"></script>
+   <script type="text/javascript" src="../js/profile.js"></script>
+ </body>
+
+</html>

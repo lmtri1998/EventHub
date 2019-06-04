@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ 	<meta charset="utf-8">
+    <title>profile</title>
+    <link rel="stylesheet" type="text/css" href="/css/common.css"> 
+    <link rel="stylesheet" type="text/css" href="/css/profileStyle.css">
+    <link rel="stylesheet" type="text/css" href="/css/popEdit.css">
+    <link rel="stylesheet" type="text/css" href="/css/viewPop.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha384-FzT3vTVGXqf7wRfy8k4BiyzvbNfeYjK+frTVqZeNDFl8woCbF0CYG6g2fMEFFo/i" crossorigin="anonymous"></script>
+</head>
+ <body>
+   <div id="topBar">
+      <ul>
+		{{#if profile}}
+			 <li id="upComing"><a>Future Events</a></li>
+			 <li id="pastEvents"><a>Past Events</a></li>
+			 <li id="followUserEvents"><a>Friend Events</a></li>
+			 <li id="myEvents"><a>My Events</a></li>
+		 {{else}}
+			<li id="myEvents"><a>User Events</a></li>
+		 {{/if}}
+         {{#if login}}
+         <li style="float:right"><a class="logout"  href="/users/logout">Log out</a></li>
+         {{else}}
+        <li style="float:right"><a class="login"  href="/login">Log in</a></li>
+         {{/if}}
+		 {{#if admin}}
+			<li style="float:right"><a class="admin" href="/admin">{{admin}}</a></li>
+		{{/if}}
+         <li style="float:right"><a class="home"  href="/">Home</a></li>
+         <li style="float:right"><a class="make">Make an event</a></li>
+      </ul>
+   </div>
+
+   <div id="mainSection">
+        <div id="eventSection">
+            
+        </div>
+
+        <div id="profileArea">
+			{{#if settingIcon}}
+				<img id="settingIcon" src="/pictures/webPic/settings.png">
+                <img id="passwordIcon" src="/pictures/webPic/password.png" onclick="openPasswordPopup()">
+			{{/if}}
+            <img class="profilePic" src="/pictures/webPic/loading.gif">
+			{{#if followBtn}}
+				<div id="followButton">{{followBtn}}</div>
+			{{/if}}
+            <div id="profileInfo">
+                <h1 class="username">loading...</h1>
+                <h4>Description</h4>
+                <p class="description">loading...</p>
+                <h4>Interests</h4>
+                <p class="interests">
+                    loading...
+                </p>
+            </div>
+        </div>
+    </div>
+   <div id='footer'></div>
+
+   <!-- HIDDEN OBJECTS -->
+   <div id="notBox">
+        <div class="notificationSection">
+        </div>
+    </div>
+    <div id="msgBox">
+        <form class="msgForm">
+            <textarea type= "text" name="notification" class="msgContent" placeholder="Enter your message here..."></textarea>
+            <input class="submitMsg" type="submit" value="Submit Message"></input>
+        </form>
+    </div>
+   	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoTRQ4XHxOlEQVJO-3yMI_15G0lBZWH0U&libraries=places" async defer></script>
+   <script type="text/javascript" src="/js/commonProfile.js"></script>
+   <script type="text/javascript" src="/js/common.js"></script>
+   <script type="text/javascript" src="/js/eventMod.js"></script>
+   <script type="text/javascript" src="/js/popUp.js"></script>
+   <script type="text/javascript" src="/js/profile.js"></script>
+ </body>
+
+</html>

@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/viewPop.css">
+	<link rel="stylesheet" type="text/css" href="../css/popEdit.css">
+</head>
+<body>
+	<div id='makePopUp' >
+	   <div class='postHolder'>
+		  <form id='postInfoForm'>
+			<div id='basicInfo' class='block'>
+				<div class='blockHeader'>Basic Info<hr class='headerLine'></div>
+				<ul class='inputFormList'>
+				   <li>
+					  <label for='categoryInput'>Category:</label>
+					  <select id='categoryInput' class='inputBox'>
+						 <option value="cs">CS</option>
+						 <option value="math">Math</option>
+						 <option value="group study">Group Study</option>
+						 <option value="party">Party</option>
+						 <option value="other">Other</option>
+					  </select>
+				   </li>
+				   <li>
+					  <label for='titleInput'>Title:</label>
+					  <input id='titleInput' class='inputBox' type="text"  maxlength="40">
+				   </li>
+				   <li>
+					  <label for='dateInput'>Date:</label>
+					  <input id='dateInput' class='inputBox' type="datetime-local">
+				   </li>
+				   <li>
+					  <label for='locationInput'>Location:</label>
+					  <input id='locationInput' class='inputBox' type="text">
+				   </li>
+				</ul>
+			 </div>
+			 <div id='desImgInfo' class='block'>
+				   <div class='blockHeader'>Main Info<hr class='headerLine'></div>
+				   <ul class='inputFormList'>
+					  <li>
+						 <label>Upload Pictures: </label>
+						 <ul id='imageList'>
+							<li>
+							   <div class="imgInputButton">
+								<input class='imgInput' type="file" accept="image/*">
+							   </div>
+							</li>
+						 </ul>
+					  </li>
+					  <li>
+						 <label for='descriptionInput'>Description: </label>
+						 <textarea id='descriptionInput' class='inputBox'></textarea>
+					  </li>
+					  <li>
+						 <label for='allowComment'>Allow Comment:</label>
+						 <input id='allowComment' type='checkbox'>Comment
+					  </li>
+				   </ul>
+			 </div>
+			 <input id='eventCancel' type="button" value="Cancel">
+			<input id='eventSubmit' type="button" value="Post your Event">
+		  </form>
+	   </div>
+	</div>
+	<script src="../js/class.js"></script>
+    <script src="../js/popUp.js"></script>
+	<script src="../js/mainScript.js"></script>
+</body>	

@@ -1,0 +1,29 @@
+<html>
+	<head lang="en">
+		<meta charset="utf-8">
+		<title>Sign in</title>
+		<link rel="stylesheet" type="text/css" href="/css/common.css">
+		<link rel="stylesheet" type="text/css" href="/css/signup.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	
+	<body>
+		<div id="login">
+			<h1>Log In</h1>
+			<div class="logo">
+				<img class="logoImg" src= "/pictures/webPic/logo.png">
+			</div>
+			<form class="container" action="/users/login" method="post">
+				<label for="uname"><b>Username</b></label>
+				<input type="text" id ="uname" placeholder="Enter Username" name="uname" required>
+
+				<label for="psw"><b>Password</b></label>
+				<input type="password" id ="psw" placeholder="Enter Password" name="psw" required>
+				<div id="errorMsg"></div>	
+				<button type="submit">Login</button>
+				<span>Don't have an account? Click <a href="/signup">here</a> to sign up!</span>
+			</form>
+		</div>
+		<script src="/js/login.js"></script>
+	</body>
+</html>

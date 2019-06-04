@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ 	<meta charset="utf-8">
+    <title>profile</title>
+    <link rel="stylesheet" type="text/css" href="/css/common.css"> 
+    <link rel="stylesheet" type="text/css" href="/css/adminProfileStyle.css">
+    <link rel="stylesheet" type="text/css" href="/css/popEdit.css">
+    <link rel="stylesheet" type="text/css" href="/css/viewPop.css"> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha384-FzT3vTVGXqf7wRfy8k4BiyzvbNfeYjK+frTVqZeNDFl8woCbF0CYG6g2fMEFFo/i" crossorigin="anonymous"></script>
+
+</head>
+ <body>
+   <div id="topBar">
+      <ul>
+         <li><a id="modifyEvents"> Modify Events</a></li>
+         <li><a id="modifyUsers" >Modify Users</a></li>
+         <li style="float:right"><a class="Log out"  href="/users/logout">Log out</a></li>
+         <li style="float:right"><a class="Profile"  href="/users/profile">My Profile</a></li>
+         <li style="float:right"><a class="Home"  href="/">Home</a></li>
+         <li style="float:right"><a class="make">Make an event</a></li>
+      </ul>
+   </div>
+   <!-- Search bar optional for phase 2 -->
+   <!-- <div class="search">
+        <img id="searchIcon" src="search.png">
+        <input id="searchContent" type='text' placeholder="Type to search"></input>
+    </div> -->
+   <div id="mainSection">
+        <div id="listSection">
+            <div id="eventListWrapper" class="list">
+                {{{events}}}
+            </div>
+            <div id="userListWrapper" class='list'>
+                {{{users}}}
+            </div>
+           
+        </div>
+
+        <div id="profileArea">
+            <img id="settingIcon" src="/pictures/webPic/settings.png">
+            <img id="passwordIcon" src="/pictures/webPic/password.png" onclick="openPasswordPopup()">
+            <img class="profilePic" src={{profilePic}}>
+            <div id="profileInfo">
+                <h1 class="username">{{username}}</h1>
+                <h4>Description</h4>
+                <p class="description">{{description}}</p>
+                <h4>Interests</h4>
+                <p class="interests">{{interests}}</p>
+            </div>
+        </div>
+    </div>
+
+   <div id='footer'></div>
+
+   <!-- HIDDEN ELEMENTS -->
+   <div id="msgBox">
+        <form class="msgForm">
+            <textarea class="msgContent" placeholder="Enter your message here..."></textarea>
+            <input class="submitMsg" type="submit" value="Submit Message"></input>
+        </form>
+    </div>
+    <div id="delBox">
+        <form class="delForm">
+            <h2></h2>
+            <button class="NO">NO</button>
+            <button class="YES">YES</button>
+        </form>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoTRQ4XHxOlEQVJO-3yMI_15G0lBZWH0U&libraries=places" async defer></script>
+    <script type="text/javascript" src="/js/common.js"></script>
+    <script type="text/javascript" src="/js/commonProfile.js"></script>
+    <script type="text/javascript" src="/js/eventMod.js"></script>
+    <script type="text/javascript" src="/js/popUp.js"></script>
+    <script type="text/javascript" src="/js/adminProfile.js"></script>
+ </body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ 	<meta charset="utf-8">
+    <title>profile</title>
+    <link rel="stylesheet" type="text/css" href="../css/adminProfileStyle.css">
+    <link rel="stylesheet" type="text/css" href="../css/popEdit.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css"> 
+    <link rel="stylesheet" type="text/css" href="../css/viewPop.css"> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha384-FzT3vTVGXqf7wRfy8k4BiyzvbNfeYjK+frTVqZeNDFl8woCbF0CYG6g2fMEFFo/i" crossorigin="anonymous"></script>
+</head>
+ <body>
+   <div id="topBar">
+      <ul>
+         <li><a id="modifyEvents"> Modify Events</a></li>
+         <li><a id="modifyUsers" >Modify Users</a></li>
+         <li style="float:right"><a class="Log out"  href="main.html">Log out</a></li>
+         <li style="float:right"><a class="Home"  href="main.html">Home</a></li>
+         <li style="float:right"><a class="make">Make an event</a></li>
+      </ul>
+   </div>
+   <!-- Search bar optional for phase 2 -->
+   <!-- <div class="search">
+        <img id="searchIcon" src="search.png">
+        <input id="searchContent" type='text' placeholder="Type to search"></input>
+    </div> -->
+   <div id="mainSection">
+        <div id="listSection">
+            <div id="eventListWrapper" class="list">
+                <!-- <div class="event">
+                    <span class="title">Bill's Party</span>
+                    <span class="location">BAHEN CENTER OF I.T.</span>
+                    <span class="date">3am, Feb 24th, 2019</span>
+                    <img class="edit" src="settings.png">
+                    <img class="delete" src="delete.png">
+                </div>
+                <div class="event">
+                    <span class="title">Bill's Party</span>
+                    <span class="location">BAHEN CENTER OF I.T.</span>
+                    <span class="date">3am, Feb 24th, 2019</span>
+                    <img class="edit" src="settings.png">
+                    <img class="delete" src="delete.png">
+                </div>
+                <div class="event">
+                    <span class="title">Bill's Party</span>
+                    <span class="location">BAHEN CENTER OF I.T.</span>
+                    <span class="date">3am, Feb 24th, 2019</span>
+                    <img class="edit" src="settings.png">
+                    <img class="delete" src="delete.png">
+                </div>
+                <div class="event">
+                    <span class="title">Bill's Party</span>
+                    <span class="location">BAHEN CENTER OF I.T.</span>
+                    <span class="date">3am, Feb 24th, 2019</span>
+                    <img class="edit" src="settings.png">
+                    <img class="delete" src="delete.png">
+                </div> -->
+            </div>
+            <div id="userListWrapper" class='list'>
+                <div class="user">
+                    <span class="name">Bill</span>
+                    <img class="edit" src="../pictures/webPic/settings.png">
+                    <img class="delete" src="../pictures/webPic/delete.png">
+                </div>
+                <div class="user">
+                    <span class="title">Bill</span>
+                    <img class="edit" src="../pictures/webPic/settings.png">
+                    <img class="delete" src="../pictures/webPic/delete.png">
+                </div>
+                <div class="user">
+                    <span class="title">Bill</span>
+                    <img class="edit" src="../pictures/webPic/settings.png">
+                    <img class="delete" src="../pictures/webPic/delete.png">
+                </div>
+                <div class="user">
+                    <span class="title">Bill</span>
+                    <img class="edit" src="../pictures/webPic/settings.png">
+                    <img class="delete" src="../pictures/webPic/delete.png">
+                </div>
+            </div>
+           
+        </div>
+
+        <div id="profileArea">
+            <img id="settingIcon" src="../pictures/webPic/settings.png">
+            <img class="profilePicture" src="../pictures/profilePic/face.jpg">
+            <div id="profileInfo">
+                <h1 class="username"></h1>
+                <h4>Description</h4>
+                <p class="description"></p>
+                <h4>Interests</h4>
+                <p class="interests">
+                </p>
+            </div>
+        </div>
+    </div>
+
+   <div id='footer'></div>
+
+   <!-- HIDDEN ELEMENTS -->
+   <div id="msgBox">
+        <form class="msgForm">
+            <textarea class="msgContent" placeholder="Enter your message here..."></textarea>
+            <input class="submitMsg" type="submit" value="Submit Message"></input>
+        </form>
+    </div>
+    <div id="delBox">
+        <form class="delForm">
+            <h2></h2>
+            <button class="YES">YES</button>
+            <button class="NO">NO</button>
+        </form>
+    </div>
+   <script type="text/javascript" src="../js/class.js"></script>
+	<script type="text/javascript" src="../js/commonProfile.js"></script>
+   <script type="text/javascript" src="../js/eventMod.js"></script>
+   <script type="text/javascript" src="../js/popUp.js"></script>
+   <script type="text/javascript" src="../js/adminProfile.js"></script>
+ </body>
+
+</html>

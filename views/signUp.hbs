@@ -1,0 +1,31 @@
+<html>
+	<head lang="en">
+		<meta charset="utf-8">
+		<title>Sign up</title>
+		<link rel="stylesheet" type="text/css" href="/css/common.css">
+		<link rel="stylesheet" type="text/css" href="/css/signup.css">
+	</head>
+	
+	<body>
+		<div id="signup">
+			<h1>Sign up</h1>
+			<div class="logo">
+				<img class="logoImg" src= "/pictures/webPic/logo.png">
+			</div>
+			<form class="container" action="/users/signup" method="post">
+				<label for="uname"><b>Username</b></label>
+				<input type="text" id ="uname" placeholder="Enter Username" name="uname" minlength="1" required>
+				
+				<label for="psw"><b>Password</b></label>
+				<input type="password" id ="psw" placeholder="Enter Password" name="psw" minlength="4" required>
+				
+				<label for="psw_repeat"><b>Repeat Password</b></label>
+				<input type="password" id="psw_repeat" placeholder="Repeat Password" name="psw_repeat" minlength="4" required>
+				<div id="errorMsg">{{msg}}</div>
+				<button type="submit">Sign up</button>
+				<span>Already have an account? Click <a href="/login">here</a> to log in!</span>
+			</form>
+		</div>
+		<script src="/js/signup.js"></script>
+	</body>
+</html>

@@ -1,0 +1,168 @@
+
+.search {
+    margin-top: 15px;
+	border: solid;
+	border-right: none;
+	border-radius: 50px 0px 0px 50px;
+	width: 300px;	
+	right: -255px;
+	border-color: #2B7A78;
+	background-color: #feffff;
+	z-index: 1000;
+	position: fixed;
+	transition: all ease-in-out 200ms;
+}
+#searchContent {
+	border: none;
+	margin-top: 11px;
+	margin-right: 75px;
+	float:right;
+	height: 25px;
+	font-size: 14;
+	background-color: #feffff;
+}
+
+.search:hover {
+    box-shadow: 1px 1px 30px gray;	
+	cursor: pointer;
+}
+
+#searchIcon {
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom:10px;
+	width: 30px;
+	height: 30px;
+}
+
+.eventList {
+	width: 90%;
+	height: 100%;
+	margin: auto;
+	border-color: #2B7A78;
+	text-align: center;
+	overflow: auto;
+}
+.event {
+	width: 400px;
+	height: 350px;
+	padding: 0;
+	margin: 20px;
+	display: inline-block;
+	border-radius: 3px;
+	position: relative;
+	transition: all ease-in-out 100ms;
+}
+.event:hover{
+    box-shadow: 1px 1px 15px gray;	
+	cursor:pointer;
+}
+.event .eventInfo{
+	background-color: #feffff;
+	display: block;
+	height: 40%;
+	width: 100%;
+	left: 0px;
+	text-align: left;
+}
+.eventInfo .title{
+	margin-bottom: 15px;
+	padding: 0;
+	font-weight: bold;
+	font-size: 23px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.eventInfo .location{
+	margin: 0;
+	padding: 0;
+	margin-bottom: 10px;
+	color: gray;	
+	font-size: 15px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.eventInfo .dateInfo{
+	margin: 0;
+	padding: 0;
+	margin-bottom: 10px;
+	color: gray;	
+	font-size: 15px;
+}
+
+.calendarContainer {
+	height: 100%;
+	width: 30%;
+	padding: 0;
+	margin: 0;
+	text-align: center;	
+}
+
+.calendar {
+	margin-top: 50%;
+	transform: translateY(-50%);	
+	text-align: center;
+}
+
+.calendar .month {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	color: crimson;
+	text-align: center;
+	font-size: 20px;
+}
+
+.calendar .date {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 20px;
+}
+.info {
+	height: 100%;
+	width: 70%;
+}
+.eventImgHolder {
+	display: block;
+	height: 60%;
+	width: 100%;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	overflow: hidden;
+	position: relative;
+}
+
+.eventPhoto{
+	object-fit: cover;
+	width:100%;
+	height:100%;
+	top: 0;
+	left: 0;
+    position: absolute;
+}
+
+.stats {
+	background-color: #c9c7c6;
+}
+.stats ul{
+	margin: 0px;
+	display: inline-block;
+	background-color: #c9c7c6;
+}
+
+.stats ul li {
+	margin: 0px 40px;
+	font-weight: bold;
+	list-style: none;
+	text-align: center;
+	display: inline-block;
+}
+
+.statsNumber {
+	display: block;
+}

@@ -1,0 +1,78 @@
+html {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    min-width: 800px;
+    min-height: 600px;
+	background-color: #17252A;
+}
+h1 {
+	text-align:center;
+	padding-top: 10px;
+}
+.logo {
+	text-align:center;
+}
+.logoImg {
+	height :150px;
+	width: 150px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.logoImg:hover {
+	opacity: 0.7;
+}
+
+#login {
+	background-color: #DEF2F1;
+	margin: auto;
+	height: 100%;
+	width: 50%;
+}
+
+#signup {
+	background-color: #DEF2F1;
+	margin: auto;
+	height: 100%;
+	width: 50%;
+}
+#errorMsg {	
+	color: red;
+}
+.psw {
+	float:right;
+}
+.container {
+	margin: 0;
+	margin-top: 10%;
+	margin-left: 17.5%;
+	width: 65%;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+/* for all button */
+button {
+  background-color: #2B7A78;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+	opacity: 0.7;
+}
